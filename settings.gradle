@@ -1,0 +1,1 @@
+include ':app',':myrecyclerview-lib','asynchttp-lib','jcvideoplayer-lib'

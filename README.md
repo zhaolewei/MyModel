@@ -1,16 +1,17 @@
-###MyModel 演示：
+##MyModel 演示：
 
 
 ![Gif图片已丢失](https://github.com/zhaolewei/MyModel/blob/master/GIF.gif)
 
 <hr/>
-###扩展库的应用方法：
+##扩展库的应用方法：
+
 ##myrecyclerview-lib ： 上拉刷新下拉加载的RecycleView
 
-#0.导入类库并在build.gadler中引用该类库，并在app:中引入该库（ctrl+shift+alt+s）
+### 0.导入类库并在build.gadler中引用该类库，并在app:中引入该库（ctrl+shift+alt+s）
 
 
-#1.把RecycleView的布局文件和类对象类型更改为PullLoadMoreRecyclerView
+### 1.把RecycleView的布局文件和类对象类型更改为PullLoadMoreRecyclerView
     <com.zlw.pullloadmorerecyclerview.PullLoadMoreRecyclerView
         android:id="@+id/pullLoadMoreRecyclerView"
         android:layout_width="match_parent"
@@ -18,9 +19,9 @@
         android:layout_margin="10dp" />
         
     private PullLoadMoreRecyclerViewtuan_rv;
-注：PullLoadMoreRecyclerView  不需要setLayoutManager
+< 注：PullLoadMoreRecyclerView  不需要setLayoutManager
 
-#2.设置PullLoadMoreRecyclerView加载参数
+### 2.设置PullLoadMoreRecyclerView加载参数
 ```java
     
 mPullLoadMoreRecyclerView = (PullLoadMoreRecyclerView) view.findViewById(R.id.pullLoadMoreRecyclerView);
@@ -34,7 +35,7 @@ mPullLoadMoreRecyclerView.setOnPullLoadMoreListener(new PullLoadMoreListener());
 mPullLoadMoreRecyclerView.setEmptyView(LayoutInflater.from(getContext()).inflate(R.layout.empty_view, null));//setEmptyView
 ```
 
-#3.回调监听
+### 3.回调监听
 ```java
 class PullLoadMoreListener implements PullLoadMoreRecyclerView.PullLoadMoreListener {
 /**
@@ -50,7 +51,7 @@ public void onRefresh() { }
 public void onLoadMore() {}
 }
 ```
-4.完成刷新效果
+### 4.完成刷新效果
 ```java
 mPullLoadMoreRecyclerView.setPullLoadMoreCompleted();
 ```
@@ -62,4 +63,4 @@ mPullLoadMoreRecyclerView.setPullLoadMoreCompleted();
 
 <hr>
  |               email: 739043667@qq.com
-<br>                address：https://github.com/zhaolewei/MyModel
+<br>|                address：https://github.com/zhaolewei/MyModel

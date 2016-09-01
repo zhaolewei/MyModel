@@ -1,7 +1,7 @@
 ###MyModel 演示：
 
 
-![Gif图片已丢失](https://github.com/zhaolewei/MyModel/Gif.gif)
+![Gif图片已丢失](https://github.com/zhaolewei/MyModel/blob/master/GIF.gif)
 
 <hr/>
 ###扩展库的应用方法：
@@ -62,4 +62,4 @@ mPullLoadMoreRecyclerView.setPullLoadMoreCompleted();
 
 <hr>
  |               email: 739043667@qq.com
-                 address：https://github.com/zhaolewei/MyModel
+<br>                address：https://github.com/zhaolewei/MyModel
